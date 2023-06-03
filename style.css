@@ -46,3 +46,6 @@ form .display input{
     width: 145px;
     height: 65px;
 }
+form input.operator{
+    color: #33ffd8;
+}
