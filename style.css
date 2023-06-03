@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .calculator{
     background: #3a4452;
@@ -41,6 +42,7 @@ form .display input{
     font-size: 45px;
     box-shadow: none;
 }
-form input .equal{
-   width: 145px; 
+.result .equal {
+    width: 145px;
+    height: 65px;
 }
