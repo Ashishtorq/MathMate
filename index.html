@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -53,79 +53,9 @@
     <script src="script.js"></script>
 </body>
 
-</html> -->
+</html> 
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator using JavaScript - Ashish Singh</title>
-    <link rel="icon" type="image/x-icon" href="images/download.png">
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <div class="container">
-        <div class="calculator">
-            <form action="">
-                <div class="display">
-                    <input id="display" type="text" name="display" placeholder="0000">
-                </div>
-                <div>
-                    <input type="button" value="AC" onclick="clearDisplay()" class="operator">
-                    <input type="button" value="DE" onclick="deleteLastCharacter()" class="operator">
-                    <input type="button" value="." onclick="appendToDisplay('.')" class="operator">
-                    <input type="button" value="/" onclick="appendToDisplay('/')" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="7" onclick="appendToDisplay('7')">
-                    <input type="button" value="8" onclick="appendToDisplay('8')">
-                    <input type="button" value="9" onclick="appendToDisplay('9')">
-                    <input type="button" value="*" onclick="appendToDisplay('*')" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="4" onclick="appendToDisplay('4')">
-                    <input type="button" value="5" onclick="appendToDisplay('5')">
-                    <input type="button" value="6" onclick="appendToDisplay('6')">
-                    <input type="button" value="-" onclick="appendToDisplay('-')" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="1" onclick="appendToDisplay('1')">
-                    <input type="button" value="2" onclick="appendToDisplay('2')">
-                    <input type="button" value="3" onclick="appendToDisplay('3')">
-                    <input type="button" value="+" onclick="appendToDisplay('+')" class="operator">
-                </div>
-                <div class="result">
-                    <input type="button" value="00" onclick="appendToDisplay('00')">
-                    <input type="button" value="0" onclick="appendToDisplay('0')">
-                    <input class="equal operator" type="button" value="=" onclick="evaluateExpression()">
-                </div>
-            </form>
-        </div>
-    </div>
-    <script src="script.js"></script>
-    <script>
-        var display = document.getElementById('display');
-        
-        function appendToDisplay(value) {
-            display.value += value;
-        }
 
-        function clearDisplay() {
-            display.value = '';
-        }
 
-        function deleteLastCharacter() {
-            display.value = display.value.slice(0, -1);
-        }
-
-        function evaluateExpression() {
-            display.value = eval(display.value);
-        }
-    </script>
-</body>
-
-</html>
